@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="I'm Hause, a graduate student. I enjoy working on fun projects, learning new skills, and discussing ideas with everyone.">
+  <meta name="author" content="Hause Lin">
+  <link rel="icon" type="image/png" href="./public/favicon.png" />
+  <title>Hause Lin</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/bootstrap.css" rel="stylesheet">
+  <!-- Custom style for cover -->
+  <link href="./assets/cover.css" rel="stylesheet">
+  <!-- Google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap">
+  <!-- animate typewriter -->
+  <!-- https://safi.me.uk/typewriterjs/ -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto"></header>
+
+    <main role="main" class="inner cover">
+
+      <h1 class="cover-heading app" id="app">Hi.</h1>
+      <!-- <p class="lead">I'm Hause, a graduate student.</p> -->
+
+      <!-- subtitles to internal pages -->
+      <p class="subtitles hide" id="subtitle">
+        <a href="./about" id="about">About</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./projects" id="projects">Projects</a>
+      </p>
+
+    </main>
+
+    <!-- animate text -->
+    <script>
+      // show Hi
+      var app = document.getElementById('app');
+      var typewriter = new Typewriter(app, {
+          loop: false,
+          cursor: ""
+        });
+      typewriter
+        .typeString('Hi.')
+        .start();  
+
+      // show links to internal pages after delay
+      // see https://www.sitepoint.com/community/t/show-a-div-after-short-delay/1980/2
+      window.onload=function() {
+        setTimeout(fx, 800);
+      };
+      function fx(){
+        document.getElementById("subtitle").className = "show";
+      }
+
+    </script>
+
+
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner"></div>
+    </footer>
+
+</body>
+
+</html>

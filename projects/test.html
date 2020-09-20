@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="My personal page.">
+  <meta name="author" content="Hause Lin">
+  <title> My Projects | Hause</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.css" rel="stylesheet">
+  <!-- Custom style for cover -->
+  <link href="../assets/cover.css" rel="stylesheet">
+  <!-- Google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto"></header>
+
+    <main role="main" class="inner cover">
+      <!-- <h1 class="cover-heading">
+        <a href="./public/papers/Lin2018Perspectives.pdf" target="_blank" download>Hi</a>      
+      </h1> -->
+
+      <input list="papers" name="papers" id='inputbox' autocomplete=true class="select-input">
+      <datalist id="papers" class="select-input">
+        <option value="Neuroeconomic framework creativity 2019" title="Lin2018Perspectives.pdf">
+        <option value="Supplement: paper 1" title="Lin2018Perspectives.pdf">
+        <option value="paper 4" title="https://www.google.com">
+      </datalist>
+
+    </main>
+    <!-- see https://stackoverflow.com/questions/10062414/is-it-possible-to-style-the-drop-down-suggestions-when-using-html5-datalist -->
+
+    <!-- see https://jsfiddle.net/AAfuX/215/ -->
+    <!-- see https://stackoverflow.com/questions/44486181/is-there-an-event-connected-to-the-choice-of-a-datalist-option -->
+
+    <!-- <script>
+    function myFunction() {
+      xyz = document.getElementById("papers");
+      console.log(xyz.options[0].title)
+      window.location.href = 'https://www.hauselin.com/attachments/publications/Lin2018Perspectives.pdf';
+
+    }
+    </script> -->
+
+    <script>
+      $("#inputbox").bind('input', function () {
+          if (checkExists($('#inputbox').val()) === true) {
+            console.log('Download file');
+          }
+        });
+
+        function checkExists(inputValue) {
+          // console.log(inputValue);
+          var x = document.getElementById("papers");
+          var i;
+          var flag;
+          for (i = 0; i < x.options.length; i++) {
+            if (inputValue == x.options[i].value) {
+              flag = true;
+              var p = x.options[i].title;
+              // console.log(p);
+              downloadFile("../public/papers/" + p, p);
+            }
+          }
+          return flag;
+        }
+
+        function downloadFile(href, title) {
+            var elem = window.document.createElement('a');
+            elem.href = href;
+            // elem.href = "https://www.google.com"
+            elem.target = "_blank";
+            elem.download = title;
+            document.body.appendChild(elem);
+            elem.click();
+            document.body.removeChild(elem);
+          }
+    </script>
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner"></div>
+    </footer>
+  </div>
+</body>
+
+</html>

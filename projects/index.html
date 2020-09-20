@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="My projects - Hause Lin">
+  <meta name="author" content="Hause Lin">
+  <link rel="icon" type="image/png" href="../public/favicon.png" />
+  <title>My Projects | Hause</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.css" rel="stylesheet">
+
+  <!-- Google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap">
+
+  <!-- Custom styles for this template -->
+  <link href="../assets/internal.css" rel="stylesheet">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header>
+    <div class="navbar fixed-top bg-white">
+      <div class="container d-flex">
+        <a href="../" class="navbar-brand d-flex navbar-text navbar-left-text">Hause</a>
+        <div class="navbar navbar-right-text">
+          <a href="../about" class="navbar-text">About</a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="../projects" class="navbar-text">Projects</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- about me -->
+  <main role="main">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 id="aboutme">My Projects</h1>
+        <p id="aboutmetext">A few projects I'm working on or have recently finished. Many are collaborations with others. If you find any project interesting, don't hesitate to email or tweet me!</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="container subsection">
+
+    <!-- row -->
+    <div class="row">
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>Academic publications</h6>
+        <p class="mb-0">
+          See <a href="https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en" target="_blank">my Google Scholar profile</a> or use the search box below to find and download a paper.
+        </p>
+
+        <!-- input searh box -->
+        <div class="div-select-input">
+          <input list="papers" name="papers" id='inputbox' autocomplete="off" class="select-input">
+        </div>
+        <!-- search options -->
+        <datalist id="papers" class="select-input">
+          <option value="Lin et al 2020 Promise and perils of experimentation: The mutual internal validity problem. Perspectives on psychological science." title="Lin2020experimentation.pdf">
+          <option value="Lin et al 2020 Strong effort manipulations reduce response caution: A preregistered reinvention of the ego-depletion paradigm. Psychological science." title="https://journals.sagepub.com/doi/pdf/10.1177/0956797620904990"></option>
+          <option value="Lin et al 2020 (code and supplement) Strong effort manipulations reduce response caution: A preregistered reinvention of the ego-depletion paradigm. Psychological science." title="https://github.com/hauselin/depletion_bayes"></option>
+          <option value="Frömer et al 2020 When effort matters: Expectations of reward and efficacy guide cognitive control allocation" title="Fromer2020cognitivecontrol.pdf">
+          <option value="Landy et al 2020 Crowdsourcing hypothesis tests: Making transparent how design choices shape research results. Psychological Bulletin." title="Landy2020crowdsourcing.pdf">
+          <option value="Lin & Vartanian 2018 Neuroeconomic framework for creative cognition. Perspectives on psychological science." title="Lin2018creativity.pdf"></option>
+          <option value="Lin et al 2018 Midfrontal theta and pupil dilation parametrically track subjective conflict (but also surprise) during intertemporal choice. NeuroImage" title="Lin2018theta.pdf"></option>
+          <option value="Lin et al 2018 (supplement) Midfrontal theta and pupil dilation parametrically track subjective conflict (but also surprise) during intertemporal choice. NeuroImage" title="Lin2018theta.pdf"></option>
+          <option value="Moshontz et at 2018. The Psychological Science Accelerator: Advancing psychology through a distributed collaborative network. Advances in Methods and Practices in Psychological Science." title="Moshontz2018psa.pdf"></option>
+          <option value="Francis et al 2018. Development of a within-subject, repeated-measures ego-depletion paradigm. Social psychology." title="Francis2018depletion.pdf"></option>
+          <option value="Saunders et al 2017. The emotive nature of conflict monitoring in the medial prefrontal cortex. International Journal of Psychophysiology." title="Saunders2017emotionsMPFC.pdf"></option>
+          
+        </datalist>
+
+      </div>
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>Problems with experimentation and theorizing</h6>
+        <p class="mb-0">We discuss the <a href="../public/papers/Lin2020experimentation.pdf" target="_blank">mutual-internal-validity problem</a> in scientific experimentation. We also highlight why researchers need to be explicity about the goals of experimentation.</p>
+      </div>
+
+    </div>
+
+    <!-- row -->
+    <div class="row">
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>How people allocate cognitive control</h6>
+        <p class="mb-0">We develop <a href="https://www.biorxiv.org/content/10.1101/2020.05.14.095935v3.full" target="_blank">a new behavioral paradigm</a> and <a href="https://github.com/froemero/reward-efficacy-evc-eeg" target="_blank">combine EEG with pupillometry</a> to test the expected value of control theory. This theory describes how costs and benefits are integrated to determine how much control to allocate.
+        </p>
+      </div>
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>Consequences of exerting effort</h6>
+        <p class="mb-0">We applied drift diffusion and hierarchical Bayesian modeling (<a href="https://github.com/hauselin/depletion_bayes" target="_blank">download code</a>) to investigate the <a href="https://journals.sagepub.com/doi/pdf/10.1177/0956797620904990" target="_blank">effects of mental effort exertion</a> in 686 participants.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- row -->
+    <div class="row">
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>Reconceptualizing creativity</h6>
+        <p class="mb-0">
+          I (with <a href="https://www.amazon.ca/Neuroscience-Creativity-Oshin-Vartanian/dp/0262019582" target="_blank">Oshin Vartanian</a>) proposed a new framework for creativity that integrates decades of research on decision making and neuromodulation (specifically the locus ceruleus-norepinephrine system).
+        </p>
+      </div>
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>Anthrope web app for behavioral science</h6>
+        <p class="mb-0">
+          We're (with Frank Fan & Maham Khan) building a <a href="https://anthrope.herokuapp.com/">web app</a> for online experimentation. This app uses frameworks/technologies like Bootstrap, MongoDB, Express, Node.js, and jsPsych.
+          </p>
+      </div>
+
+    </div>
+
+    <!-- row -->
+    <div class="row">
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>Data science and statistics tutorials</h6>
+        <p class="mb-0">
+          I occasionally create <a href="https://hausetutorials.netlify.app/" target="_blank">data science tutorials</a>. They are mostly for my forgetful future self, though they also answer a lot of frequently-asked data analysis questions. 
+        </p>
+      </div>
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>R package <em>hausekeep</em></h6>
+        <p class="mb-0"><a href="https://hauselin.github.io/hausekeep/" target="_blank">hausekeep is an R package/library</a> I never plan to submit to <a href="https://cran.r-project.org/" target="_blank">CRAN</a>. It has a lot of helper/utility functions I use when analyzing data in R.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- row -->
+    <div class="row">
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>Effect size converter</h6>
+        <p class="mb-0">
+          An <a href="https://www.escal.site/" target="_blank">simple website that helps you convert between commonly used effect size metrics</a> (e.g., Cohen's d, Pearson's r, odds ratio, AUC, Cohen's f)
+        </p>
+      </div>
+
+      <div class="p-4 mb-3 bg-light rounded col-sm box">
+        <h6>Writing on Medium</h6>
+        <p class="mb-0">I occasionally <a href="https://medium.com/@ausius" target="_blank">write on Medium (@ausius)</a>, a blogging platform founded by <a href="https://en.wikipedia.org/wiki/Evan_Williams_(Internet_entrepreneur)" target="_blank">Evan Williams</a>. It's a place with <a href="https://medium.com/@ev/welcome-to-medium-9e53ca408c48" target="_blank">"little stories that make your day better and manifestos that change the world."</a>
+        </p>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- js to download files from inputbox -->
+  <script>
+      $("#inputbox").bind('input', function () {
+          if (checkExists($('#inputbox').val()) === true) {
+            console.log('Download file');
+          }
+        });
+
+        function checkExists(inputValue) {
+          // console.log(inputValue);
+          var x = document.getElementById("papers");
+          var i;
+          var flag;
+          for (i = 0; i < x.options.length; i++) {
+            if (inputValue == x.options[i].value) {
+              flag = true;
+              var p = x.options[i].title;
+              downloadFile("../public/papers/" + p, p);
+            }
+          }
+          return flag;
+        }
+
+        function downloadFile(href, title) {
+            var elem = window.document.createElement('a');
+            elem.href = href;
+            if (title.slice(0, 4) == "http") {
+              elem.href = title;
+            }
+            elem.target = "_blank";
+            elem.download = title;
+            document.body.appendChild(elem);
+            elem.click();
+            document.body.removeChild(elem);
+          }
+    </script>
+
+</body>
+
+</html>
