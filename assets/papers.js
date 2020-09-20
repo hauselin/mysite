@@ -1,6 +1,8 @@
 // https://stackoverflow.com/questions/17929356/html-datalist-values-from-array-in-javascript
 
 // list of papers
+// option: display/search value (what users can search for)
+// title: file name in public/papers
 var paper_datalist_options = [
     {
         "option": "Lin et al 2020 Promise and perils of experimentation: The mutual internal validity problem. Perspectives on psychological science. #philosophy",
