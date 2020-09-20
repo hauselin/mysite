@@ -18,6 +18,9 @@
   <!-- Custom styles for this template -->
   <link href="../assets/internal.css" rel="stylesheet">
 
+  <!-- js -->
+  <script src="../assets/search.js"></script>
+
 </head>
 
 <body>
@@ -61,16 +64,17 @@
         <div class="div-select-input">
           <input list="papers" name="papers" id='inputbox' autocomplete="off" class="select-input">
         </div>
+        <script>document.querySelector("#inputbox").addEventListener("input", checkExists);</script>
         <!-- search options -->
         <datalist id="papers" class="select-input">
           <option value="Lin et al 2020 Promise and perils of experimentation: The mutual internal validity problem. Perspectives on psychological science. #philosophy" title="Lin2020experimentation.pdf">
           <option value="Lin et al 2020 Strong effort manipulations reduce response caution: A preregistered reinvention of the ego-depletion paradigm. Psychological science. #depletion #effort #ddm #diffusion #brms #bayes" title="https://journals.sagepub.com/doi/pdf/10.1177/0956797620904990"></option>
-          <option value="Lin et al 2020 (code and supplement) Strong effort manipulations reduce response caution: A preregistered reinvention of the ego-depletion paradigm. Psychological science. #depletion #effort #ddm #diffusion #brms #bayes" title="https://github.com/hauselin/depletion_bayes"></option>
+          <option value="Lin et al 2020 (code and supplement) Strong effort manipulations reduce response caution: A preregistered reinvention of the ego-depletion paradigm. Psychological science. #depletion #effort #ddm #diffusion #brms #bayes #supplement" title="https://github.com/hauselin/depletion_bayes"></option>
           <option value="Frömer et al 2020 When effort matters: Expectations of reward and efficacy guide cognitive control allocation #effort #eeg #pupil" title="Fromer2020cognitivecontrol.pdf">
           <option value="Landy et al 2020 Crowdsourcing hypothesis tests: Making transparent how design choices shape research results. Psychological Bulletin. #open-science #philosophy" title="Landy2020crowdsourcing.pdf">
           <option value="Lin & Vartanian 2018 Neuroeconomic framework for creative cognition. Perspectives on psychological science." title="Lin2018creativity.pdf"></option>
           <option value="Lin et al 2018 Midfrontal theta and pupil dilation parametrically track subjective conflict (but also surprise) during intertemporal choice. NeuroImage. #eeg #pupil" title="Lin2018theta.pdf"></option>
-          <option value="Lin et al 2018 (supplement) Midfrontal theta and pupil dilation parametrically track subjective conflict (but also surprise) during intertemporal choice. NeuroImage. #eeg #pupil" title="Lin2018theta.pdf"></option>
+          <option value="Lin et al 2018 (supplement) Midfrontal theta and pupil dilation parametrically track subjective conflict (but also surprise) during intertemporal choice. NeuroImage. #eeg #pupil #supplement" title="Lin2018thetaSupp.pdf"></option>
           <option value="Moshontz et at 2018. The Psychological Science Accelerator: Advancing psychology through a distributed collaborative network. Advances in Methods and Practices in Psychological Science. #open-science" title="Moshontz2018psa.pdf"></option>
           <option value="Francis et al 2018. Development of a within-subject, repeated-measures ego-depletion paradigm. Social psychology. #depletion #effort" title="Francis2018depletion.pdf"></option>
           <option value="Saunders et al 2017. The emotive nature of conflict monitoring in the medial prefrontal cortex. International Journal of Psychophysiology. #eeg" title="Saunders2017emotionsMPFC.pdf"></option>
@@ -160,46 +164,6 @@
 
 
   </section>
-
-
-
-
-  <!-- js to download files from inputbox -->
-  <script>
-    // https://stackoverflow.com/questions/574941/best-way-to-track-onchange-as-you-type-in-input-type-text?noredirect=1&lq=1
-    document.querySelector("#inputbox").addEventListener("input", checkExists);
-    // check if value exists
-    function checkExists(inputValue) {
-      if (inputValue === undefined) {
-        return undefined;
-      }
-      var x = document.getElementById("papers");
-      var i;
-      var flag;
-      for (i = 0; i < x.options.length; i++) { // loop through all options in papers
-        if (inputValue.data == x.options[i].value) {
-          flag = true;
-          var p = x.options[i].title;
-          downloadFile("../public/papers/" + p, p);
-        }
-      }
-      return flag;
-    }
-
-    // add element and simulate click
-    function downloadFile(href, title) {
-        var elem = window.document.createElement('a');
-        elem.href = href;
-        if (title.slice(0, 4) == "http") { // if it's a url
-          elem.href = title;
-        }
-        elem.target = "_blank";
-        elem.download = title;
-        document.body.appendChild(elem);
-        elem.click();
-        document.body.removeChild(elem);
-      }
-    </script>
 
 </body>
 
