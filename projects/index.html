@@ -18,8 +18,6 @@
   <!-- Custom styles for this template -->
   <link href="../assets/internal.css" rel="stylesheet">
 
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -76,7 +74,7 @@
           <option value="Moshontz et at 2018. The Psychological Science Accelerator: Advancing psychology through a distributed collaborative network. Advances in Methods and Practices in Psychological Science." title="Moshontz2018psa.pdf"></option>
           <option value="Francis et al 2018. Development of a within-subject, repeated-measures ego-depletion paradigm. Social psychology." title="Francis2018depletion.pdf"></option>
           <option value="Saunders et al 2017. The emotive nature of conflict monitoring in the medial prefrontal cortex. International Journal of Psychophysiology." title="Saunders2017emotionsMPFC.pdf"></option>
-          
+
         </datalist>
 
       </div>
@@ -119,7 +117,7 @@
         <h6>Anthrope web app for behavioral science</h6>
         <p class="mb-0">
           We're (with Frank Fan & Maham Khan) building a <a href="https://anthrope.herokuapp.com/" target="_blank">web app</a> for online experimentation. This app uses frameworks/technologies like Bootstrap, MongoDB, Express, Node.js, and jsPsych.
-          </p>
+        </p>
       </div>
 
     </div>
@@ -130,7 +128,7 @@
       <div class="p-4 mb-3 bg-light rounded col-sm box">
         <h6>Data science and statistics tutorials</h6>
         <p class="mb-0">
-          I occasionally create <a href="https://hausetutorials.netlify.app/" target="_blank">data science tutorials</a>. They are mostly for my forgetful future self, though they also answer a lot of frequently-asked data analysis questions. 
+          I occasionally create <a href="https://hausetutorials.netlify.app/" target="_blank">data science tutorials</a>. They are mostly for my forgetful future self, though they also answer a lot of frequently-asked data analysis questions.
         </p>
       </div>
 
@@ -168,39 +166,38 @@
 
   <!-- js to download files from inputbox -->
   <script>
-      $("#inputbox").bind('input', function () {
-          if (checkExists($('#inputbox').val()) === true) {
-            console.log('Download file');
-          }
-        });
-
-        function checkExists(inputValue) {
-          // console.log(inputValue);
-          var x = document.getElementById("papers");
-          var i;
-          var flag;
-          for (i = 0; i < x.options.length; i++) {
-            if (inputValue == x.options[i].value) {
-              flag = true;
-              var p = x.options[i].title;
-              downloadFile("../public/papers/" + p, p);
-            }
-          }
-          return flag;
+      document.querySelector("#inputbox").addEventListener("input", checkExists);
+      // check if value exists
+      function checkExists(inputValue) {
+        if (inputValue === undefined) {
+          return undefined;
         }
-
-        function downloadFile(href, title) {
-            var elem = window.document.createElement('a');
-            elem.href = href;
-            if (title.slice(0, 4) == "http") {
-              elem.href = title;
-            }
-            elem.target = "_blank";
-            elem.download = title;
-            document.body.appendChild(elem);
-            elem.click();
-            document.body.removeChild(elem);
+        var x = document.getElementById("papers");
+        var i;
+        var flag;
+        for (i = 0; i < x.options.length; i++) { // loop through all options in papers
+          if (inputValue.data == x.options[i].value) {
+            flag = true;
+            var p = x.options[i].title;
+            downloadFile("../public/papers/" + p, p);
           }
+        }
+        return flag;
+      }
+
+      // add element and simulate click
+      function downloadFile(href, title) {
+          var elem = window.document.createElement('a');
+          elem.href = href;
+          if (title.slice(0, 4) == "http") { // if it's a url
+            elem.href = title;
+          }
+          elem.target = "_blank";
+          elem.download = title;
+          document.body.appendChild(elem);
+          elem.click();
+          document.body.removeChild(elem);
+        }
     </script>
 
 </body>
