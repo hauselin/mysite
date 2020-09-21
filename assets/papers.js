@@ -18,7 +18,7 @@ var paper_datalist_options = [
     },
     {
         "option": "Frömer et al 2020 When effort matters: Expectations of reward and efficacy guide cognitive control allocation #effort #eeg #pupil",
-        "title": "Fromer2020cognitivecontrol.pdf"
+        "title": "https://www.biorxiv.org/content/10.1101/2020.05.14.095935v3.full.pdf"
     },
     {
         "option": "Landy et al 2020 Crowdsourcing hypothesis tests: Making transparent how design choices shape research results. Psychological Bulletin. #open-science #philosophy",

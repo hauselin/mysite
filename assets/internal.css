@@ -92,14 +92,15 @@ h4, h5, h6 {
   height: 13rem;
 }
 
-.div-select-input {
-  text-align: center;
-  padding-top: 5px;
+.btn {
+  padding-left: 5px;
+  padding-right: 0px;
 }
 
-
-
-
+.div-select-input {
+  text-align: left;
+  padding-top: 5px;
+}
 
 /* css for input box in projects */
 /* search input box */
@@ -109,7 +110,7 @@ h4, h5, h6 {
   border: 1.5px solid #3b528b;
   border-radius: 5px;
   /* max-width: 340px; */
-  width: 250px; 
+  width: 150px; 
   overflow:auto; 
   height: 40px;
   /* height: 65px;  */
