@@ -1,0 +1,74 @@
+# redirect options
+# https://docs.netlify.com/routing/redirects/redirect-options/#http-status-codes
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301 # permanent redirect (see https://docs.netlify.com/routing/redirects/redirect-options/#http-status-codes)
+  force = true # always redirect
+
+[[redirects]]
+  from = "/scholar"
+  to = "https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/osf"
+  to = "https://osf.io/qnhy7/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/datascience"
+  to = "https://hausetutorials.netlify.app/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/publons"
+  to = "https://publons.com/researcher/2932672/hause-lin/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/researchgate"
+  to = "https://www.researchgate.net/profile/Hause_Lin"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linkedin"
+  to = "https://www.linkedin.com/in/hauselin"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/hauselin"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/twitter"
+  to = "https://twitter.com/hauselin"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/medium"
+  to = "https://medium.com/@ausius"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/escal"
+  to = "http://www.escal.site"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/orcid"
+  to = "https://orcid.org/0000-0003-4590-7039"
+  status = 301
+  force = true
