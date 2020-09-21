@@ -58,21 +58,25 @@
       <div class="p-4 mb-3 bg-light rounded col-sm box">
         <h6>Academic publications</h6>
         <p class="mb-0">
-          See <a href="https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en" target="_blank">my Google Scholar profile</a> or try searching below. Click a matching result to download or open the result in a new tab.
+          See <a href="https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en" target="_blank">my Google Scholar profile</a> or search below. You can download
+          <img src="../public/images/cloud-download.svg" alt="Download" class="img_nofloat"> 
+          or copy 
+          <img src="../public/images/clippy.svg" alt="Download" class="img_nofloat"> the link to the search result.
+          
         </p>
 
         <!-- input searh box -->
         <div class="div-select-input">
           <input list="papers" name="papers" id='inputbox' autocomplete="off" class="select-input" onfocus="this.value=''">
-          <!-- copy to clipboard -->
-          <button class="btn" onclick="copy2clipboard(path)">
-            <img src="../public/images/clippy.svg" alt="Copy to clipboard">
-          </button>
           <!-- download button -->
           <button class="btn" id="downloadbtn">
             <a target="_blank" id="downloadlink">
-              <img src="../public/images/cloud-download.svg" alt="Download">
+                <img src="../public/images/cloud-download.svg" alt="Download">
             </a>
+          </button>
+          <!-- copy to clipboard -->
+          <button class="btn" onclick="copy2clipboard(path)">
+            <img src="../public/images/clippy.svg" alt="Copy to clipboard">
           </button>
         </div>
 

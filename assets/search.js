@@ -54,3 +54,4 @@ function copy2clipboard(x) {
     document.execCommand('copy', false);
     inp.remove();
 }
+
