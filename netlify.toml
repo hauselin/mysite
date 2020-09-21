@@ -73,9 +73,3 @@
   to = "https://orcid.org/0000-0003-4590-7039"
   status = 301
   force = true
-
-[[redirects]]
-  from = "/*"
-  to = "./"
-  status = 301
-  force = true
