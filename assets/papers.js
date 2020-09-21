@@ -13,7 +13,7 @@ var paper_datalist_options = [
         "title": "https://journals.sagepub.com/doi/pdf/10.1177/0956797620904990"
     },
     {
-        "option": "Lin et al 2020 (code and supplement) Strong effort manipulations reduce response caution: A preregistered reinvention of the ego-depletion paradigm. Psychological science. #depletion #effort #ddm #diffusion #brms #bayes #supplement",
+        "option": "Lin et al 2020 (supplement & code) Strong effort manipulations reduce response caution: A preregistered reinvention of the ego-depletion paradigm. Psychological science. #depletion #effort #ddm #diffusion #brms #bayes #supplement",
         "title": "https://github.com/hauselin/depletion_bayes"
     },
     {
