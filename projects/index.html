@@ -67,9 +67,9 @@
 
         <!-- input searh box -->
         <div class="div-select-input">
-          <input list="papers" name="papers" id='inputbox' autocomplete="off" class="select-input" onfocus="this.value=''">
+          <input list="papers" name="papers" id='inputbox' autocomplete="off" class="select-input">
           <!-- download button -->
-          <button class="btn" id="downloadbtn">
+          <button class="btn" id="downloadbtn" onclick="dl1()">
             <a target="_blank" id="downloadlink">
                 <img src="../public/images/cloud-download.svg" alt="Download">
             </a>
@@ -82,6 +82,8 @@
 
         <!-- check for input -->
         <script>document.querySelector("#inputbox").addEventListener("input", checkExists);</script>
+        
+        </script>
         <!-- create datalist search options -->
         <datalist id="papers" class="select-input"></datalist>
         <!-- append options to datalist from papers.js -->
