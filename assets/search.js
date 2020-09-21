@@ -46,6 +46,7 @@ function downloadFile(href, title) {
     document.body.removeChild(elem);
 }
 
+// update download button on click
 function dl1() {
     var inputval = document.querySelector("#inputbox").value;
     if (inputval == "") {
@@ -69,7 +70,7 @@ function dl1() {
     elem_download.href = x
 }
 
-
+// update click button on click
 function copy2clipboard(x) {
     if (x === undefined) {
         var inputval = document.querySelector("#inputbox").value;
