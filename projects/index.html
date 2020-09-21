@@ -58,31 +58,43 @@
       <div class="p-4 mb-3 bg-light rounded col-sm box">
         <h6>Academic publications</h6>
         <p class="mb-0">
-          See <a href="https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en" target="_blank">my Google Scholar profile</a> or search for a keyword below. You can download
-          <img src="../public/images/cloud-download.svg" alt="Download" class="img_nofloat"> 
-          or copy 
-          <img src="../public/images/clippy.svg" alt="Download" class="img_nofloat"> the URL to the search result.
-          
+          See <a href="https://scholar.google.com/citations?user=4_ZopI0AAAAJ&hl=en" target="_blank">my Google Scholar profile</a> or search for a keyword below. Click one of the buttons to 
+          download
+          <!-- <img src="../public/images/cloud-download.svg" alt="Download" class="img-nofloat"> -->
+          <!-- download button -->
+          <button class="btn img-nofloat" id="downloadbtn" onclick="dl1()">
+            <a target="_blank" id="downloadlink">
+              <img src="../public/images/cloud-download.svg" alt="Download">
+            </a>
+          </button>
+          or 
+          copy 
+          <!-- <img src="../public/images/clippy.svg" alt="Download" class="img-nofloat"> -->
+          <!-- copy to clipboard -->
+          <button class="btn img-nofloat" onclick="copy2clipboard(path)">
+            <img src="../public/images/clippy.svg" alt="Copy to clipboard">
+          </button>
+          the URL.
         </p>
 
         <!-- input searh box -->
         <div class="div-select-input">
-          <input list="papers" name="papers" id='inputbox' autocomplete="off" class="select-input">
+          <input list="papers" name="papers" id='inputbox' autocomplete="off" class="form-control select-input shadow-none">
           <!-- download button -->
-          <button class="btn" id="downloadbtn" onclick="dl1()">
+          <!-- <button class="btn img-nofloat" id="downloadbtn" onclick="dl1()">
             <a target="_blank" id="downloadlink">
-                <img src="../public/images/cloud-download.svg" alt="Download">
+              <img src="../public/images/cloud-download.svg" alt="Download">
             </a>
-          </button>
+          </button> -->
           <!-- copy to clipboard -->
-          <button class="btn" onclick="copy2clipboard(path)">
+          <!-- <button class="btn img-nofloat" onclick="copy2clipboard(path)">
             <img src="../public/images/clippy.svg" alt="Copy to clipboard">
-          </button>
+          </button> -->
         </div>
 
         <!-- check for input -->
         <script>document.querySelector("#inputbox").addEventListener("input", checkExists);</script>
-        
+
         </script>
         <!-- create datalist search options -->
         <datalist id="papers" class="select-input"></datalist>
@@ -129,7 +141,7 @@
       <div class="p-4 mb-3 bg-light rounded col-sm box">
         <h6>Reconceptualizing creativity</h6>
         <p class="mb-0">
-          I (with <a href="https://www.amazon.com/s?i=digital-text&rh=p_27%3AOshin+Vartanian" target="_blank">Oshin Vartanian</a>) proposed a new framework for creativity that integrates decades of research on decision making and neuromodulation (specifically the locus ceruleus-norepinephrine system).
+          I (with <a href="https://www.amazon.com/s?i=digital-text&rh=p_27%3AOshin+Vartanian" target="_blank">Oshin Vartanian</a>) proposed <a href="../public/papers/Lin2018creativity.pdf" target="_blank">a new framework for creativity</a> that integrates decades of research on decision making and neuromodulation (specifically the locus ceruleus-norepinephrine system).
         </p>
       </div>
 
@@ -148,13 +160,20 @@
       <div class="p-4 mb-3 bg-light rounded col-sm box">
         <h6>Data science and statistics tutorials</h6>
         <p class="mb-0">
-          I occasionally create <a href="https://hausetutorials.netlify.app/" target="_blank">data science tutorials</a>. They are mostly for my forgetful future self, though they also answer a lot of frequently-asked data analysis questions.
+          I occasionally create <a href="https://hausetutorials.netlify.app/" target="_blank">data science tutorials</a>. They are mostly for my forgetful future self, though you can also find many FAQs (e.g.,
+          <a href="https://hausetutorials.netlify.app/0002_tidyverse_datatable.html" target="_blank">data.table vs tidyverse's dplyr</a>,
+          <a href="https://hausetutorials.netlify.app/posts/2019-07-06-interpreting-interaction-regression-coefficients/" target="_blank">interpret statistical interactions</a>,
+          <a href="https://hausetutorials.netlify.app/posts/2020-05-14-reshaping-data-in-python-pandas/" target="_blank">reshape dataframes</a>,
+          <a href="https://hausetutorials.netlify.app/posts/2019-04-09-gentle-and-intuitive-intro-to-markov-chain-monte-carlo-mcmc/" target="_blank">MCMC</a>).
         </p>
       </div>
 
       <div class="p-4 mb-3 bg-light rounded col-sm box">
         <h6>R package <em>hausekeep</em></h6>
-        <p class="mb-0"><a href="https://hauselin.github.io/hausekeep/" target="_blank">hausekeep is an R package/library</a> I never plan to submit to <a href="https://cran.r-project.org/" target="_blank">CRAN</a>. It has a lot of helper/utility functions I use when analyzing data in R.
+        <p class="mb-0"><a href="https://hauselin.github.io/hausekeep/" target="_blank">hausekeep is an R package/library</a> I never plan to submit to <a href="https://cran.r-project.org/" target="_blank">CRAN</a>. It has a lot of helper/utility functions for data analysis (e.g.,
+          <a href="https://hauselin.github.io/hausekeep/reference/seWithin.html" target="_blank">compute within-subject error bars</a>,
+          <a href="https://hauselin.github.io/hausekeep/reference/outliersMAD.html" target="_blank">detect outliers</a>,
+          <a href="https://hauselin.github.io/hausekeep/reference/summaryh.html" target="_blank">summarize models</a>).
         </p>
       </div>
 

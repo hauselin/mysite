@@ -89,7 +89,6 @@ h4, h5, h6 {
 .box {
   margin-left: 1rem;
   margin-right: 1rem;
-  height: 13rem;
 }
 
 .btn {
@@ -98,7 +97,7 @@ h4, h5, h6 {
 }
 
 .div-select-input {
-  text-align: left;
+  text-align: center;
   padding-top: 5px;
 }
 
@@ -107,15 +106,16 @@ h4, h5, h6 {
 .select-input {
   /* background: transparent;  */
   /* background: #ddd; */
-  border: 1.5px solid #3b528b;
+  border: 2.0px solid #3b528b;
   border-radius: 5px;
   /* max-width: 340px; */
-  width: 160px; 
+  /* width: 220px;  */
+  /* max-width: 100%; */
   overflow:auto; 
-  height: 40px;
+  height: 35px;
   /* height: 65px;  */
-  padding-left: 5px;
-  padding-right: 5px;;
+  padding-left: 1px;
+  padding-right: 1px;;
   /* padding-bottom: 5px;  */
   -webkit-appearance: none; 
   -moz-appearance:none; 
@@ -139,6 +139,12 @@ h4, h5, h6 {
 input:focus {
   outline: none;
 }
+
+.form-control:focus{
+  border-color: #21918c;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+} 
 
 .mb-0 {
   color: #505050;
@@ -172,6 +178,7 @@ img {
   font-weight: bold;
 }
 
-.img_nofloat {
+.img-nofloat {
   float: none;
+  padding-left: 0rem;
 }
