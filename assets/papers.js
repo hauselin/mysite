@@ -25,6 +25,10 @@ var paper_datalist_options = [
         "title": "Landy2020crowdsourcing.pdf"
     },
     {
+        "option": "Anderson et al 2020 The metronome response task for measuring mind wandering: Replication attempt and extension of three studies by Seli et al. #open-science #replication",
+        "title": "Anderson2020MRT.pdf"
+    },
+    {
         "option": "Lin & Vartanian 2018 Neuroeconomic framework for creative cognition. Perspectives on psychological science.",
         "title": "Lin2018creativity.pdf"
     },
