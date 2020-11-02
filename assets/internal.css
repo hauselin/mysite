@@ -74,7 +74,20 @@ footer p {
 }
 
 .navbar-left-text {
-  font-size: 230%;
+  font-size: 200%;
+}
+
+/* https://medium.com/wdstack/bootstrap-4-custom-navbar-1f6a2da5ed3c */
+.navbar {
+    min-height: 2px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.05rem;
+}
+
+/* shadow for navbar */
+/* https://stackoverflow.com/questions/60680652/how-to-add-a-shadow-under-a-navbar-using-css */
+.fixed-top {
+  box-shadow: 0 0px 8px 0 rgba(0,0,0,.2);
 }
 
 .subsection {
@@ -182,3 +195,6 @@ img {
   float: none;
   padding-left: 0rem;
 }
+
+
+
