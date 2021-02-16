@@ -17,8 +17,12 @@ var paper_datalist_options = [
         "title": "https://github.com/hauselin/depletion_bayes"
     },
     {
-        "option": "Frömer et al 2020 When effort matters: Expectations of reward and efficacy guide cognitive control allocation #effort #eeg #pupil",
-        "title": "https://www.biorxiv.org/content/10.1101/2020.05.14.095935v3.full.pdf"
+        "option": "Frömer, Lin et al. 2021 Expectations of reward and efficacy guide cognitive control allocation #effort #eeg #pupil",
+        "title": "https://rdcu.be/cfemg"
+    },
+    {
+        "option": "Frömer, Lin et al. 2021 (code) Expectations of reward and efficacy guide cognitive control allocation #effort #eeg #pupil",
+        "title": "https://github.com/froemero/reward-efficacy-evc-eeg"
     },
     {
         "option": "Landy et al 2020 Crowdsourcing hypothesis tests: Making transparent how design choices shape research results. Psychological Bulletin. #open-science #philosophy",
