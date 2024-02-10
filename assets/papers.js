@@ -17,11 +17,11 @@ let paper_datalist_options = [
         "title": "https://osf.io/gnk4m/download"
     },
     {
-        "option": "Lin et al 2023 Thinking more or thinking differently? Using drift-diffusion modeling to illuminate why accuracy prompts decrease misinformation sharing #accuracy-prompt",
+        "option": "Lin et al 2023 Thinking more or thinking differently? Using drift-diffusion modeling to illuminate why accuracy prompts decrease misinformation sharing #accuracy-prompt #misinfo",
         "title": "LinPennycookRand2023-thinking.pdf"
     },
     {
-        "option": "Lin et al 2023 Thinking more or thinking differently? Supplement",
+        "option": "Lin et al 2023 (supplement) Thinking more or thinking differently? #accuracy-prompt #misinfo",
         "title": "LinPennycookRand2023-thinking-supplement.pdf"
     },
     {
@@ -41,7 +41,11 @@ let paper_datalist_options = [
         "title": "Lin2023-domain-quality.pdf"
     },
     {
-        "option": "Lin Rand Pennycook 2023 Conscientiousness does not moderate the association between political ideology and susceptibility to fake news sharing #misinfo",
+        "option": "Lin et al 2023 (supplement) High level of correspondence across different news domain quality rating sets #misinfo",
+        "title": "Lin2023-domain-quality-supplement.pdf"
+    },
+    {
+        "option": "Lin etal 2023 Conscientiousness does not moderate the association between political ideology and susceptibility to fake news sharing #misinfo",
         "title": "Lin2023-conscientiousness-ideology.pdf"
     },
     {
