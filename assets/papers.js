@@ -21,6 +21,10 @@ let paper_datalist_options = [
         "title": "LinPennycookRand2023-thinking.pdf"
     },
     {
+        "option": "Lin et al 2023 Thinking more or thinking differently? Supplement",
+        "title": "LinPennycookRand2023-thinking-supplement.pdf"
+    },
+    {
         "option": "Lin 2023 The scientific value of explanation and prediction #philosophy",
         "title": "Lin2023-BBS-scientific-value-explain-predict.pdf"
     },
