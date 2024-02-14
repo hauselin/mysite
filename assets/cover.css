@@ -31,6 +31,7 @@ body {
   background-color: rgb(21, 21, 21);
 }
 
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap');
 body {
   font-family: 'Overpass', sans-serif;
   display: -ms-flexbox;
