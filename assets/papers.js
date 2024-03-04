@@ -14,7 +14,11 @@ let paper_datalist_options = [
     },
     {
         "option": "Lin et al 2024 An experimental manipulation of the value of effort #effort #registered-report",
-        "title": "https://osf.io/gnk4m/download"
+        "title": "Lin_Inzlicht_2024-effort.pdf"
+    },
+    {
+        "option": "Lin et al 2024 (supplement) An experimental manipulation of the value of effort #effort #registered-report",
+        "title": "Lin_Inzlicht_2024-effort-supplement.pdf"
     },
     {
         "option": "Lin et al 2023 Thinking more or thinking differently? Using drift-diffusion modeling to illuminate why accuracy prompts decrease misinformation sharing #accuracy-prompt #misinfo",
