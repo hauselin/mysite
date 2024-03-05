@@ -33,8 +33,8 @@ let paper_datalist_options = [
         "title": "Lin2023-BBS-scientific-value-explain-predict.pdf"
     },
     {
-        "option": "Lin et al 2023 Repeated exposure increases professional content moderators’ belief in false claims #misinfo",
-        "title": "https://osf.io/preprints/psyarxiv/zuvek"
+        "option": "Lin et al 2024 Accuracy prompts protect professional content moderators from the illusory truth effect #misinfo",
+        "title": "https://osf.io/preprints/psyarxiv/gswm6/download"
     },
     {
         "option": "Bhargava et al 2023 How effective are TikTok debunking videos? #misinfo",
