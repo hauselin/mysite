@@ -5,6 +5,14 @@
 // title: file name in public/papers
 let paper_datalist_options = [
     {
+        "option": "Lin 2024 ollamar R package for local LLMs",
+        "title": "https://osf.io/zsrg5/download"
+    },
+    {
+        "option": "Lin 2024 external validity of social experiments",
+        "title": "https://osf.io/ekm95/download"
+    },
+    {
         "option": "Pennycook 2024 inoculation and acc prompt #misinfo",
         "title": "Pennycook 2024 inoculation-acc-prompt.pdf"
     },
