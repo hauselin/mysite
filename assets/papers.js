@@ -5,6 +5,14 @@
 // title: file name in public/papers
 let paper_datalist_options = [
     {
+        "option": "Lin et al 2024 accuracy prompt illusory truth effect content moderators #misinfo",
+        "title": "Lin_Rand_2024-content-moderator-acc-prompt.pdf"
+    },
+    {
+        "option": "Lin et al 2024 (supplement) accuracy prompt illusory truth effect content moderators #misinfo",
+        "title": "Lin_Rand_2024-content-moderator-acc-prompt-supplement.pdf"
+    },
+    {
         "option": "Lin et al 2024 Reducing misinformation sharing at scale using digital accuracy prompt ads #field #accuracy-prompt #misinfo",
         "title": "https://osf.io/u8anb/download"
     },
